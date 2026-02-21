@@ -1,0 +1,4 @@
+Roblox GroupV1 API:
+API Endpoint: https://groups.roblox.com/v1/groups/{groupID}
+Documentation: https://create.roblox.com/docs/cloud/legacy/groups/v1#/Groups/get_v1_groups__groupId_
+Parameter Taken: "memberCount", "name"
