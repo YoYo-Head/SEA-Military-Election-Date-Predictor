@@ -1,19 +1,19 @@
 from robloxAPI import GroupData as GD
 import time
+import config
 
 # Variables
 newMembers = 0
-SEAGroupID = 2648601 # 2648601 is SEA's group ID
-members = GD.getGroupMembers(SEAGroupID) 
-memberJoins = GD.getDailyMemberJoins(SEAGroupID, 90) # This command may take a bit of time to return
-milestoneAmount = 250000 # Amount required for every election
+members = GD.getGroupMembers(config.SEA_GROUP_ID) 
+memberJoins = GD.getDailyMemberJoins(config.SEA_GROUP_ID, config.DAYS_OF_DATA) # This command may take a bit of time to return
+milestoneAmount = config.MILESTONE_AMOUNT # Amount required for every election
 target = 0
 
 print("INFO (MAIN) - Processing data... \n")
 
 # Algorithm
 while target <= members:
-    target = target + milestoneAmount
+    target = target + config.MILESTONE_AMOUNT
 
 membersRequired = target - members
 

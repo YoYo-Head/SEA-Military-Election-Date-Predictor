@@ -21,7 +21,7 @@ class GroupData:
         error2 = "ERROR (RBLXAPI - getGroupMembers) - Unknown error occurred! Possibly the API is down or your internet is unstable. \n"
 
         if response.status_code == 200:
-            print("INFO (RBLXAPI - getGroupMembers) - Successfully connected to Roblox API!")
+            print("\nINFO (RBLXAPI - getGroupMembers) - Successfully connected to Roblox API!")
 
             data = response.json()
             members = data.get("memberCount")
